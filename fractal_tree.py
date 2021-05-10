@@ -23,14 +23,14 @@ def fractal_tree(sz, level):
 
         rt(angle)
 
-        # Chamada recursiva para o lado direito do fractal
+        # Chamada recursiva para os ramos do lado direito
         fractal_tree(0.8 * sz, level - 1)
 
         pencolor(0, 255 // level, 0)
 
         lt(2 * angle)
 
-        # Chamada recursiva para o lado direito do fractal
+        # Chamada recursiva para os ramos do lado esquerdo
         fractal_tree(0.8 * sz, level - 1)
 
         pencolor(0, 255 // level, 0)
